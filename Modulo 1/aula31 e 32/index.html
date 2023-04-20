@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinamica</title>
+</head>
+<body>
+    <p>abra o site em varios dispositivos ou apenas mude o tamanho do navegador</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>audio em site</h1>
+    <audio src="midia/guanacast-33.mp3" controls></audio>
+    <p>tambem podemos usar o source no meio da tag <code><strong>audio</strong></code> para colocar varios tipos de formato caso um deles nao seja compativel com algum navegador</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+    </audio>
+        <p>consegui fazer o autoplay funcionar mas so toca depois que mudo o codigo entao sla <br>de qualquer forma podemos usar os parametros <strong><code>controls</code></strong> <strong><code>loop</code></strong> e <strong><code>autoplay</code></strong> para mostrar os controles, deixar o audio em loop e tocar automaticamente(nsei se funciona mt bem)</p>
+</body>
+</html>

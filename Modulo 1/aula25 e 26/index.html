@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listas</title>
+</head>
+<body>
+    <h1>Listas</h1>
+    <h2>listas ordenadas</h2>
+        <p>podemos usar a tag <strong><abbr title="ordered lists">OL</abbr></strong> para fazer listas juntamente com a tag <strong>LI</strong> para listar os itens. exemplo abaixo</p>
+        <ol>
+            <li>missao diaria e resgate katheryne</li>
+            <li>gastar resina</li>
+            <li>farmar artefato</li>
+            <li>farmar itens acensao</li>
+            <li>fazer missao ou pegar anemoculus, carmesim, etc...</li>
+        </ol>
+        <p>dentro da tag <strong>ol</strong> podemos usar um parametro para mudar o tipo de numeraçao da lista, sendo esse parametro o <strong>TYPE</strong> com suas variaçoes sendo:1(numeros)o tipo padrao, A, a(letras maiusculas e letras minusculas respectivamente), I, i(numeros romanos maiusculos e minusculos respectivamente). exemplos abaixo</p>
+        <ol type="A">
+            <li>arroz</li>
+        </ol>
+        <ol type="I">
+            <li>pepino</li>
+        </ol>
+    <h2>listas nao ordenadas</h2>
+        <p>listas nao ordenadas seguem a mesma logica so mudando a tag e os seus tipos, com a tag agora sendo <strong>UL</strong> e os tipos sendo:disc(padrao), circle e square(bola, circulo e quadrado respectivamente). exemplo abaixo</p>
+        <ul>
+            <li>lavar louça</li>
+            <li>limpar chao</li>
+            <li>dar comida laura</li>
+        </ul>
+        <ul type="circle">
+            <li>tomate</li>
+        </ul>
+        <ul type="square">
+            <li>feijao</li>
+        </ul>
+    <h2>listas aninhadas</h2>
+        <ol>
+            <li>aprendendo</li>
+            <ul type="disc">
+                <li><abbr title="JavaScript">js</abbr></li>
+                <li><abbr title="HyperText Markup Language 5">html5</abbr></li>
+                <li><abbr title="Cascading Style Sheets 3">css3</abbr></li>
+            </ul>
+            <li>para aprender</li>
+            <ul type="disc">
+                <li>python</li>
+                <li>c++</li>
+                <ul type="circle">
+                    <li>c+</li>
+                </ul>
+                <li>c#</li>
+            </ul>
+        </ol>
+    <h2>lista de definiçao</h2>
+    <p>com a tag <strong>DL</strong> fazemos uma lista de definiçao que conseguimos colocar termo e descriçao com as respectivas tags <strong>DT</strong> e <strong>DD</strong>. exemplos a seguir</p>
+        <dl>
+            <dt>ola</dt>
+            <dd>forma de saudaçao, comprimentar, se apresentar</dd>
+        </dl>
+</body>
+</html>
