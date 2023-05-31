@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colgroup em Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        #nome{
+            background-color: aliceblue;
+        }
+        #idade{
+            background-color: beige;
+        }
+        #sexo{
+            background-color: brown;
+        }
+        #profissao{
+            background-color:darkgreen ;
+        }
+        #teste{
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col id="nome">
+            <col id="idade">
+            <col id="sexo">
+            <col id="profissao">
+            <col id="teste" span="2">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+                <th colspan="2" scope="colgroup">TESTE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>79</td>
+                <td>Jornalista</td>
+                <td>teste</td>
+                <td>teste</td>
+            </tr>
+            <tr>
+                <td>Joao da Silva</td>
+                <td>M</td>
+                <td>12</td>
+                <td>Estudante</td>
+                <td>teste</td>
+                <td>teste</td>
+            </tr>
+            <tr>
+                <td>José de Carvalho</td>
+                <td>M</td>
+                <td>57</td>
+                <td>Pedreiro</td>
+                <td>teste</td>
+                <td>teste</td>
+            </tr>
+            <tr>
+                <td>Kevin Sampaio</td>
+                <td>M</td>
+                <td>41</td>
+                <td>Caminhoeiro</td>
+                <td>teste</td>
+                <td>teste</td>
+            </tr>
+            <tr>
+                <td>Ingrid Matias</td>
+                <td>F</td>
+                <td>32</td>
+                <td>Programadora</td>
+                <td>teste</td>
+                <td>teste</td>
+            </tr>
+            <tr>
+                <td>Pedro Nascimento</td>
+                <td>M</td>
+                <td>21</td>
+                <td>Policial</td>
+                <td>teste</td>
+                <td>teste</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
